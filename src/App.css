@@ -5,16 +5,7 @@ body {
   height: 100%;
   background-color: #ddcfb2de;
 }
-/* html {
-  margin: 0;
-  padding: 0;
-}
-
-body {
-  margin: 0;
-  padding: 0;
-  min-height: 100vh; /* 🌟 關鍵：改用最小高度，確保內容變長時，body 能跟著變長 */
-*/ #root {
+#root {
   display: flex;
   flex-direction: column;
   min-height: 100vh; /* 🌟 確保最少有整個螢幕高 */

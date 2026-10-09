@@ -38,7 +38,7 @@ const App = () => {
 
   return (
     <section id="center">
-      <div>
+      <div id="header">
         <h1> 法國跳團走透透 </h1>
       </div>
       <div className="menu">

@@ -2,6 +2,20 @@ body {
   margin: 0;
   background-color: #ddcfb2de;
 }
+#footer,
+#header {
+  margin: 0;
+  background-color: rgb(177, 131, 74);
+  /* ─── 加上這兩行修正 ─── */
+  width: 100vw; /* 讓寬度強制等於整個螢幕的視窗寬度 */
+  margin-left: calc(
+    -50vw + 50%
+  ); /* 破除外層容器的 max-width 限制，強行向左右撐滿 */
+
+  /* ─── 建議加上內襯（Padding）讓文字更好看 ─── */
+  padding: 25px 0; /* 上下留白 20px，左右 0 */
+  text-align: center; /* 讓字體在滿版的背景裡置中 */
+}
 #center {
   display: flex;
   flex-direction: column;
@@ -13,7 +27,6 @@ body {
   h1 {
     color: rgba(63, 63, 197, 0.96);
     font-size: 44px;
-    margin-top: 30px;
   }
 
   h2 {
@@ -54,7 +67,7 @@ body {
   a,
   p,
   li {
-    line-height: 1.3;
+    line-height: 1.5;
   }
   .detail {
     padding-left: 40px;
@@ -136,4 +149,13 @@ img {
   /* 選填：可以加上一點上下間距，讓照片跟文字按鈕之間有呼吸空間 */
   margin-top: 20px;
   margin-bottom: 20px;
+}
+
+.year {
+  color: black;
+  font-weight: bold; /* 順便加粗，讓視覺更有層次 */
+  margin-right: 8px; /* 在年份和文字之間留一點點小空隙 */
+}
+br {
+  line-height: 15px;
 }

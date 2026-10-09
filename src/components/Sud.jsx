@@ -1,6 +1,6 @@
 const Sud = () => {
   return (
-    <div>
+    <div className="place">
       <h2>普羅旺斯</h2>
       <h3>Procence</h3>
       <div className="history">

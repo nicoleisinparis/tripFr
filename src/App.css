@@ -1,9 +1,8 @@
-html,
 body {
   margin: 0;
   padding: 0;
   height: 100%;
-  background-color: #ddcfb2de;
+  background-color: #f4d597de;
 }
 #root {
   display: flex;
@@ -17,10 +16,6 @@ body {
   background-color: rgb(177, 131, 74);
   /* ─── 加上這兩行修正 ─── */
   width: 100vw; /* 讓寬度強制等於整個螢幕的視窗寬度 */
-  margin-left: calc(
-    -50vw + 50%
-  ); /* 破除外層容器的 max-width 限制，強行向左右撐滿 */
-
   padding: 20px;
   text-align: center; /* 讓字體在滿版的背景裡置中 */
 }
@@ -34,7 +29,7 @@ body {
   flex-grow: 1;
   font-family: "Hachi Maru Pop", cursive;
   h1 {
-    color: rgba(185, 85, 131, 0.96);
+    color: rgba(253, 133, 221, 0.983);
     font-size: 44px;
   }
 
@@ -46,7 +41,7 @@ body {
   }
   h3 {
     font-family: "Short Stack", cursive;
-    color: white;
+    color: rgba(187, 100, 164, 0.983);
     font-size: 25px;
     font-weight: bold;
     font-style: italic;
@@ -72,7 +67,7 @@ body {
   }
   p {
     font-size: 14px;
-    color: rgb(223, 136, 29);
+    color: rgb(187, 111, 18);
   }
   a,
   p,

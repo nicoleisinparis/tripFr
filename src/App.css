@@ -1,6 +1,24 @@
+html,
 body {
   margin: 0;
+  padding: 0;
+  height: 100%;
   background-color: #ddcfb2de;
+}
+/* html {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh; /* 🌟 關鍵：改用最小高度，確保內容變長時，body 能跟著變長 */
+*/ #root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* 🌟 確保最少有整個螢幕高 */
+  width: 100%;
 }
 #footer,
 #header {
@@ -12,10 +30,10 @@ body {
     -50vw + 50%
   ); /* 破除外層容器的 max-width 限制，強行向左右撐滿 */
 
-  /* ─── 建議加上內襯（Padding）讓文字更好看 ─── */
-  padding: 25px 0; /* 上下留白 20px，左右 0 */
+  padding: 20px;
   text-align: center; /* 讓字體在滿版的背景裡置中 */
 }
+
 #center {
   display: flex;
   flex-direction: column;
@@ -25,7 +43,7 @@ body {
   flex-grow: 1;
   font-family: "Hachi Maru Pop", cursive;
   h1 {
-    color: rgba(63, 63, 197, 0.96);
+    color: rgba(185, 85, 131, 0.96);
     font-size: 44px;
   }
 
@@ -111,7 +129,7 @@ body {
 /* 微調法文標籤（下方）*/
 .btn-fr {
   font-size: 16px; /* 法文字稍微小一點，形成視覺階層 */
-  color: #666;
+  color: #b88a98;
   font-family: "Short Stack", cursive;
   font-weight: bolder;
   font-style: italic;
@@ -123,9 +141,9 @@ body {
   height: 52px;
   padding: 5px 2px; /* 增加按鈕內襯，按鈕看起來更專業 */
   cursor: pointer;
-  color: forestgreen;
+  color: rgb(20, 157, 72);
   font-weight: bold;
-  background-color: aquamarine;
+  background-color: rgba(8, 55, 12, 0.991);
   border-radius: 10px;
   cursor: pointer;
 }

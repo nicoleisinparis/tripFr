@@ -7,6 +7,7 @@ import Colmar from "./components/Colmar";
 import Brusl from "./components/Brusl";
 import Tools from "./Tools";
 import Footer from "./components/Footer";
+
 const App = () => {
   const [activePage, setActivePage] = useState(null);
 
@@ -50,6 +51,7 @@ const App = () => {
         ))}
       </div>
       {activePage && pages[activePage]}
+
       <Footer />
     </section>
   );

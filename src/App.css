@@ -1,3 +1,7 @@
+body {
+  margin: 0;
+  background-color: #ddcfb2de;
+}
 #center {
   display: flex;
   flex-direction: column;
@@ -7,6 +11,9 @@
   flex-grow: 1;
   font-family: "Hachi Maru Pop", cursive;
   h1 {
+    color: rgba(63, 63, 197, 0.96);
+    font-size: 44px;
+    margin-top: 30px;
   }
 
   h2 {
@@ -35,20 +42,26 @@
     font-size: 16px;
     color: black;
   }
-  b {
+  b,
+  li {
     font-size: 14.5px;
     color: rgb(79, 76, 76);
   }
   p {
     font-size: 14px;
-
     color: rgb(223, 136, 29);
   }
   a,
-  p {
+  p,
+  li {
     line-height: 1.3;
   }
-
+  .detail {
+    padding-left: 40px;
+  }
+  li {
+    padding: 5px;
+  }
   .place {
     padding: 15px 10px; /* 上下左右全部留出 20px 的空間 */
     max-width: 800px; /* 限制寬度 */

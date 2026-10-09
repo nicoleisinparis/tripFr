@@ -6,7 +6,7 @@ import Smichel from "./components/Smichel";
 import Colmar from "./components/Colmar";
 import Brusl from "./components/Brusl";
 import Tools from "./Tools";
-
+import Footer from "./components/Footer";
 const App = () => {
   const [activePage, setActivePage] = useState(null);
 
@@ -39,7 +39,7 @@ const App = () => {
   return (
     <section id="center">
       <div>
-        <h1> 法國脫團走透透 </h1>
+        <h1> 法國跳團走透透 </h1>
       </div>
       <div className="menu">
         {Object.keys(pages).map((key) => (
@@ -50,6 +50,7 @@ const App = () => {
         ))}
       </div>
       {activePage && pages[activePage]}
+      <Footer />
     </section>
   );
 };

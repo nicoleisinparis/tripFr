@@ -54,11 +54,17 @@ body {
     padding-top: 10px;
   }
   h4 {
-    color: rgb(46, 46, 219);
+    color: rgba(187, 100, 164, 0.983);
     font-size: 20px;
     font-weight: bold;
-    padding-top: 40px;
-    padding-bottom: 10px;
+    padding-top: 20px;
+    padding-bottom: 5px;
+  }
+  h5{color: rgba(187, 100, 164, 0.983);
+    font-size: 16px;
+    font-weight: bold;
+    padding-top: 20px;
+    padding-bottom: 5px;
   }
   a {
     font-size: 16px;
@@ -69,10 +75,12 @@ body {
     font-size: 14.5px;
     color: rgb(79, 76, 76);
   }
+
   p {
     font-size: 14px;
-    color: rgb(187, 111, 18);
+    color: rgb(159, 92, 10);
   }
+ 
   a,
   p,
   li {
@@ -83,6 +91,15 @@ body {
   }
   li {
     padding: 5px;
+  }
+  i{
+    font-size: 25px;
+    color: crimson;
+    font-weight: bold;
+    margin: 0px 4px ;
+  }
+  em{
+    color: white;
   }
   .place {
     padding: 15px 10px; /* 上下左右全部留出 20px 的空間 */
@@ -132,7 +149,7 @@ body {
   height: 52px;
   padding: 5px 2px; /* 增加按鈕內襯，按鈕看起來更專業 */
   cursor: pointer;
-  color: rgb(20, 157, 72) !important;
+  color: rgb(20, 157, 72) !important; 
   font-weight: bold;
   background-color: rgba(8, 55, 12, 0.991) !important;
   border-radius: 10px;
@@ -146,10 +163,13 @@ body {
   margin-top: 15px; /* 選單與上方標題 H1 的間距 */
 }
 .walk {
-  color: rgba(229, 28, 135, 0.779) !important;
+  color: rgba(229, 28, 135, 0.779) !important; 
+}
+.photo{
+  display: flex;
 }
 img {
-  max-width: 50%;
+  max-width: 31.5%;
   height: auto;
   display: block; /* 關鍵 1：將圖片改為區塊元素，才能套用自動外距 */
   margin-left: auto; /* 關鍵 2：左邊外距自動填滿 */
@@ -158,7 +178,10 @@ img {
   /* 選填：可以加上一點上下間距，讓照片跟文字按鈕之間有呼吸空間 */
   margin-top: 20px;
   margin-bottom: 20px;
+  border-radius: 10px;
 }
+
+
 
 .year {
   color: black;
@@ -168,6 +191,7 @@ img {
 br {
   line-height: 15px;
 }
+
 button,
 input,
 select {
@@ -175,4 +199,7 @@ select {
   -moz-appearance: none !important;
   appearance: none !important; /* 取消三星手機瀏覽器內建的預設外觀 */
   color-scheme: light !important;
-}
+} /*可已拿掉 為三星手機而更改＊/
+ 
+ 
+ 

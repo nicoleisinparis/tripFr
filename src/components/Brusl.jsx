@@ -1,12 +1,19 @@
+import choco from "../assets/choco.jpg";
+import waffle from "../assets/waffle.jpg";
 const Brusl = () => {
   return (
     <div className="place">
       <h2>布魯塞爾 </h2>
       <h3>Bruxelles</h3>
-      <img
-        src="https://res.cloudinary.com/dabohvtpk/image/upload/v1791557005/grandplace-1_ho0xqf.png"
-        alt="grandplace"
-      />
+      <div className="photo">
+        <img src={waffle} alt="waffle" />
+
+        <img
+          src="https://res.cloudinary.com/dabohvtpk/image/upload/v1791557005/grandplace-1_ho0xqf.png"
+          alt="grandplace"
+        />
+        <img src={choco} alt="choco" />
+      </div>
 
       <a className="walk">
         建議行程 ：大廣場 (看金箔與摸雕像) ➔ 聖休伯特拱廊街(賞巧克力窗) ➔

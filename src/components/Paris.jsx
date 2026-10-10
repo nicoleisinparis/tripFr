@@ -1,19 +1,26 @@
+import paris1 from "../assets/paris1.jpg";
+import paris2 from "../assets/paris2.jpg";
+
 const Paris = () => {
   return (
     <div className="place">
       <h2>巴黎</h2>
       <h3>Paris</h3>
-      <img
-        src="https://res.cloudinary.com/dabohvtpk/image/upload/v1791571869/paris_hhn6vp.png"
-        alt="paris"
-      />
+      <div className="photo">
+        <img src={paris2} alt="notre dame" />
+        <img
+          src="https://res.cloudinary.com/dabohvtpk/image/upload/v1791571869/paris_hhn6vp.png"
+          alt="paris"
+        />
+        <img src={paris1} alt="louvre" />
+      </div>
       <a className="walk">
         聖母院 ➔ 市政府 ➔ 羅浮宮 ➔ 杜樂麗花園 ➔ 協和廣場 ➔ 大皇宮 ➔ 小皇宮 ➔
         亞歷山大橋 ➔ 香榭大道 ➔ 凱旋門 ➔ 海洋公園(拍巴黎全景) ➔ 巴黎鐵塔
       </a>
       <div className="history">
         <h4>關鍵歷史</h4>
-        <p>
+        <em>
           巴黎建城於公元 1 世紀，由高盧-羅馬人建立的
           Lutetia（盧特埃提亞）為前身。中世紀時成為法蘭西王國首都，巴黎聖母院（1163
           年動工）即為那個時代的產物。1789 年法國大革命在此爆發，先賢祠
@@ -21,7 +28,7 @@ const Paris = () => {
           大規模改造巴黎，開闢了寬闊的林蔭大道（含 香榭麗舍大道）、修建了
           艾菲爾鐵塔 的前身基礎設施。1900 年世界博覽會催生了 大皇宮、小皇宮 與
           亞歷山大三世橋，奠定了現代巴黎的城市輪廓。
-        </p>
+        </em>
         <h4>西岱島與塞納河左岸</h4>
         <b>巴黎聖母院（Notre-Dame de Paris） </b>
         <p>

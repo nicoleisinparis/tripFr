@@ -3,12 +3,16 @@ body {
   padding: 0;
   height: 100%;
   background-color: #f4d597de;
+  -webkit-text-size-adjust: 100%;
 }
 #root {
   display: flex;
   flex-direction: column;
   min-height: 100vh; /* 🌟 確保最少有整個螢幕高 */
   width: 100%;
+}
+:root {
+  color-scheme: light dark; /* 讓瀏覽器尊重原本的配色 */
 }
 #footer,
 #header {
@@ -128,9 +132,9 @@ body {
   height: 52px;
   padding: 5px 2px; /* 增加按鈕內襯，按鈕看起來更專業 */
   cursor: pointer;
-  color: rgb(20, 157, 72);
+  color: rgb(20, 157, 72) !important;
   font-weight: bold;
-  background-color: rgba(8, 55, 12, 0.991);
+  background-color: rgba(8, 55, 12, 0.991) !important;
   border-radius: 10px;
   cursor: pointer;
 }
@@ -163,4 +167,12 @@ img {
 }
 br {
   line-height: 15px;
+}
+button,
+input,
+select {
+  -webkit-appearance: none !important;
+  -moz-appearance: none !important;
+  appearance: none !important; /* 取消三星手機瀏覽器內建的預設外觀 */
+  color-scheme: light !important;
 }
